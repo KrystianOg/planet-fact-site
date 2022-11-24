@@ -1,0 +1,26 @@
+$white: #FFFFFF;
+
+@mixin upper-white {
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin antonio-400 {
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 400;
+    
+    @include upper-white;
+}
+
+@mixin spartan-700 {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin spartan-400 {
+    @include spartan-700;
+    font-weight: 400;
+    color: $white;
+}

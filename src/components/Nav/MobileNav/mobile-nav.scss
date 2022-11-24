@@ -1,0 +1,16 @@
+
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    h2 {
+        font-size: 28px;
+        letter-spacing: -1.05px;
+        margin: 0;
+        margin-left: 14px;
+    }
+}
+
+.mobile-navbar-container {
+    padding: 0px;
+}

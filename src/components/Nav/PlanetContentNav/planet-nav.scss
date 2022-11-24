@@ -1,0 +1,19 @@
+@use '../../../mixins.scss' as *;
+@use '../../../index.scss' as *;
+
+.planet-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid $dark-grey;
+    border-top: 1px solid $dark-grey;
+
+    h4 {
+
+        &:active {
+            color: $white;
+        }
+    }
+}
+

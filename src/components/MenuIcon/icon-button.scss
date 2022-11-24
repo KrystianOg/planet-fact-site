@@ -1,0 +1,15 @@
+@use '../../index.scss' as *;
+
+.icon-button {
+    width: 56px;
+    height: 56px;
+    background: none;
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 769) {
+        display: none;
+    }
+}

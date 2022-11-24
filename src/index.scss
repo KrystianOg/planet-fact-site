@@ -1,0 +1,95 @@
+@use './mixins.scss' as *;
+
+$background: #070724;
+$dark-grey: #38384F;
+$grey: #838391;
+
+// planets
+$mercury: #419EBB;
+$venus: #EDA249;
+$earth: #6F2ED6;
+$mars: #D14C32;
+$jupiter: #D83A34;
+$saturn: #CD5120;
+$uranus: #1EC2A4;
+$neptune: #2D68F0;
+
+$font-antonio: 'Antonio', sans-serif;
+$font-spartan: 'League Spartan', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;700&family=League+Spartan:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Antonio', 'League Spartan'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $background;
+  background-image: url('./assets/background-stars.svg');
+
+  @include spartan-400;
+
+  h1 {
+    @include antonio-400;
+
+    font-size: 80px;
+    line-height: 104px;
+  }
+
+  h2 {
+    @include antonio-400;
+
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+    
+  }
+
+  h3 {
+    @include spartan-700;
+
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+  }
+
+  h4 {
+    @include spartan-700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  button {
+    @extend h3;
+
+    mix-blend-mode: normal;
+    // opacity: 0.2;
+    border: 1px solid #FFFFFF;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $grey;
+    }
+
+    &:active {
+      background-color: var(--current-active);
+      border: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $grey;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
